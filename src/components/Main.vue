@@ -1,15 +1,29 @@
 <template>
     <div class="main py-5 px-4">
         <div class="container">
+            <div class="col-md-12 mb-5">
+                <input type="text" v-model="search" class="form-control search-input" placeholder="Ваше имя...">
+            </div>
             <div class="row">
-                <div class="col-md-4" v-for="(girl, index) in girls" :key="index">
+                <div class="col-md-4" v-for="(girl, index) in filteredGirls" :key="index">
                     <div class="card mx-2 my-5 shadow-lg text-center pb-4 px-3">
+                        <div class="profile_heart profile_heart-1">
+                            <p><font-awesome-icon icon="heart"/></p>
+                        </div>
+                        <div class="profile_heart profile_heart-2" :style="{color: girl.color}">
+                            <p><font-awesome-icon icon="heart"/></p>
+                        </div>
                         <div class="profile_card_img">
-                            <img class="rounded-circle shadow-lg" :src="girl.img" alt="profile card">
+                            <img :style="{border: '4px solid ' + girl.color}" class="rounded-circle shadow-lg" :src="girl.img" alt="profile card">
                         </div>
                         <div class="profile_content">
                             <div class="profile_content-title">
                                 <h3>{{ girl.name }}</h3>
+                            </div>
+                            <div class="profile_content-tags mb-2">
+                                <small v-for="(tag, index) in girl.tags" :key="index">
+                                    #{{ tag }}
+                                </small>
                             </div>
                             <div class="profile_content-text">
                                 <p>{{ girl.description }}</p>
@@ -26,27 +40,25 @@
 </template>
 
 <script>
+    import { faHeart } from '@fortawesome/free-solid-svg-icons'
+    import { library } from '@fortawesome/fontawesome-svg-core'
+    library.add(faHeart)
+
     export default {
         name: "Main",
         data() {
             return {
-                girls: [
-                    {
-                        name: 'Нане',
-                        description: 'Несколько хороших и интересных качеств Нане. Lorem ipsum dolor sit amet, consectetur.',
-                        img: 'https://sun9-53.userapi.com/c858216/v858216733/154063/7BwVpT5UyZM.jpg'
-                    },
-                    {
-                        name: 'Мариам',
-                        description: 'Несколько хороших и интересных качеств Мариам. Lorem ipsum dolor sit amet, consectetur.',
-                        img: require('@/assets/img/girls/mariam.png')
-                    },
-                    {
-                        name: 'Рита',
-                        description: 'Несколько хороших и интересных качеств Риты. Lorem ipsum dolor sit amet, consectetur.',
-                        img: require('@/assets/img/girls/rita.png')
-                    }
-                ]
+                search: ''
+            }
+        },
+        computed: {
+            filteredGirls() {
+                return this.girls.filter(girl => {
+                    return girl.name.toLowerCase().match(this.search.toLowerCase())
+                })
+            },
+            girls() {
+                return this.$store.getters.allGirls
             }
         }
     }
@@ -66,6 +78,10 @@
         color: #303334
         font-family: 'Comfortaa', cursive
 
+    .search-input
+        border-radius: 25px
+
+
     .card
         border-radius: 20px
         border: none
@@ -76,12 +92,27 @@
         img
             width: 130px
             height: 130px
-            border: 4px solid #ff62f4
 
     .profile
+        &_heart
+            position: absolute
+            font-size: 1.6rem
+            &-1
+                left: 5%
+                top: 5%
+                color: #ff2c7b
+            &-2
+                right: 5%
+                top: 5%
+                color: #ff5d38
+
         &_content
             margin-top: -40px
-            
+            &-tags
+                font-weight: 700
+                small
+                    color: #ffcb00
+
     .button
         display: block
         margin: 0 auto
