@@ -1,36 +1,38 @@
 <template>
-    <div class="main py-5 px-4">
-        <div class="container">
-            <div class="col-md-12 mb-5">
-                <input type="text" v-model="search" class="form-control search-input" placeholder="Ваше имя...">
-            </div>
-            <div class="row">
-                <div class="col-md-4" v-for="(girl, index) in filteredGirls" :key="index">
-                    <div class="card mx-2 my-5 shadow-lg text-center pb-4 px-3">
-                        <div class="profile_heart profile_heart-1">
-                            <p><font-awesome-icon icon="heart"/></p>
-                        </div>
-                        <div class="profile_heart profile_heart-2" :style="{color: girl.color}">
-                            <p><font-awesome-icon icon="heart"/></p>
-                        </div>
-                        <div class="profile_card_img">
-                            <img :style="{border: '4px solid ' + girl.color}" class="rounded-circle shadow-lg" :src="girl.img" alt="profile card">
-                        </div>
-                        <div class="profile_content">
-                            <div class="profile_content-title">
-                                <h3>{{ girl.name }}</h3>
+    <div class="main">
+        <div class="wrapper py-5 px-4">
+            <div class="container">
+                <div class="col-md-12 mb-5">
+                    <input type="text" v-model="search" class="form-control search-input" placeholder="Ваше имя...">
+                </div>
+                <div class="row">
+                    <div class="col-md-4" v-for="(girl, index) in filteredGirls" :key="index">
+                        <div class="card mx-2 my-5 shadow-lg text-center pb-4 px-3">
+                            <div class="profile_heart profile_heart-1">
+                                <p><font-awesome-icon icon="heart"/></p>
                             </div>
-                            <div class="profile_content-tags mb-2">
-                                <small v-for="(tag, index) in girl.tags" :key="index">
-                                    #{{ tag }}
-                                </small>
+                            <div class="profile_heart profile_heart-2" :style="{color: girl.color}">
+                                <p><font-awesome-icon icon="heart"/></p>
                             </div>
-                            <div class="profile_content-text">
-                                <p>{{ girl.description }}</p>
+                            <div class="profile_card_img">
+                                <img :style="{border: '4px solid ' + girl.color}" class="rounded-circle shadow-lg" :src="girl.img" alt="profile card">
                             </div>
-                        </div>
-                        <div class="profile_button my-3">
-                            <a href="" class="button instagram"><span class="gradient"></span>Начнем</a>
+                            <div class="profile_content">
+                                <div class="profile_content-title">
+                                    <h3>{{ girl.name }}</h3>
+                                </div>
+                                <div class="profile_content-tags mb-2">
+                                    <small v-for="(tag, index) in girl.tags" :key="index">
+                                        #{{ tag }}
+                                    </small>
+                                </div>
+                                <div class="profile_content-text">
+                                    <p>{{ girl.description }}</p>
+                                </div>
+                            </div>
+                            <div class="profile_button my-3">
+                                <router-link :to="'/girl/' + index" class="button instagram"><span class="gradient"></span>Начнем</router-link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,21 +67,15 @@
 </script>
 
 <style lang="sass" scoped>
-    @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500|Neucha|Poiret+One&display=swap&subset=cyrillic')
-
     .main
         width: 100%
         min-height: 100vh
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #36c7d5)
-        //background: linear-gradient(135deg, #ff0f1d, #5b5efb, #f7b350)
-        //background: linear-gradient(to right, #16222a, #3a6073)
-        background-size: 400% 400%
-        animation: gradient-animation 8s ease-in-out infinite
-        color: #303334
-        font-family: 'Comfortaa', cursive
 
-    .search-input
-        border-radius: 25px
+
+    .wrapper
+        width: 100%
+        min-height: 100%
+        color: #303334
 
 
     .card
