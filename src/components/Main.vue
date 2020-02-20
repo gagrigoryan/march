@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                             <div class="profile_button my-3">
-                                <router-link :to="'/girl/' + index" class="button instagram"><span class="gradient"></span>Начнем</router-link>
+                                <router-link :to="'/girl/' + girl.id" class="button instagram"><span class="gradient"></span>Начнем</router-link>
                             </div>
                         </div>
                     </div>

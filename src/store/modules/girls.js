@@ -4,6 +4,7 @@ export default {
     state: {
         girls: [
             {
+                id: 0,
                 name: 'Нане',
                 description: 'Несколько хороших и интересных качеств Нане. Lorem ipsum dolor sit amet, consectetur.',
                 img: 'https://sun9-53.userapi.com/c858216/v858216733/154063/7BwVpT5UyZM.jpg',
@@ -12,6 +13,7 @@ export default {
                 code: 'nane123'
             },
             {
+                id: 1,
                 name: 'Мариам',
                 description: 'Несколько хороших и интересных качеств Мариам. Lorem ipsum dolor sit amet, consectetur.',
                 img: require('@/assets/img/girls/mariam.png'),
@@ -20,6 +22,7 @@ export default {
                 code: 'mar123'
             },
             {
+                id: 2,
                 name: 'Рита',
                 description: 'Несколько хороших и интересных качеств Риты. Lorem ipsum dolor sit amet, consectetur.',
                 img: require('@/assets/img/girls/rita.png'),
@@ -28,6 +31,7 @@ export default {
                 code: 'rita123'
             },
             {
+                id: 3,
                 name: 'Ани',
                 description: 'Несколько хороших и интересных качеств Ани. Lorem ipsum dolor sit amet, consectetur.',
                 img: require('@/assets/img/girls/ani1.jpg'),
