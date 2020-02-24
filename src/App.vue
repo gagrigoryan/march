@@ -26,6 +26,7 @@ export default {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #36c7d5);
         background-size: 400% 400%;
         animation: gradient-animation 8s ease-in-out infinite;
+        z-index: -2;
     }
 
     .wrapper {

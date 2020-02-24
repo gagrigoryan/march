@@ -15,14 +15,14 @@
                                class="form-control search-input my-3"
                                placeholder="Кодовое слово..."
                                v-model="code">
-                        <a href="https://www.google.ru/"
+                        <router-link :to="'/welcome/' + girl.id"
                            :class="{'inp-op': inputShow, 'disabled': !correctCode, 'danger-bg': !correctCode}"
                            :disabled="!correctCode"
-                           class="btn btn-primary pl-3 pr-4 py-2">
+                           class="btn btn-primary pl-3 pr-4 py-2 profile_input-btn">
                             <font-awesome-icon style="transition: all .3s ease" v-if="correctCode" class="mr-2" icon="paper-plane"/>
                             <font-awesome-icon style="transition: all .3s ease" v-else class="mr-2" icon="times"/>
                             Пройти
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
             transform: translate(-50%, -50%)
             &_input
                 transform: translateY(-90px)
-                a
+                &-btn
                     border-radius: 25px
                     transition: all .4s ease-in, color .1s
                     transition-delay: .6s
