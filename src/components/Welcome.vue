@@ -18,12 +18,12 @@
         >
           {{ girl.name }}
         </h1>
-        <button
-          class="btn btn-outline-light my-2"
+        <router-link :to="'/quiz/' + girl.id"
+          class="text__btn btn btn-outline-light my-2"
           :class="{ button_block: button_block }"
         >
           Дальше
-        </button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@ export default {
     h1
         text-transform: uppercase
         display: block
-    button
+    &__btn
         border-width: 2px
         opacity: 0
         transition: all 1.2s
