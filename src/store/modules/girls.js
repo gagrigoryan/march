@@ -8,11 +8,12 @@ export default {
                 name: 'Нане',
                 description: 'Несколько хороших и интересных качеств Нане. Lorem ipsum dolor sit amet, consectetur.',
                 img: 'https://sun9-53.userapi.com/c858216/v858216733/154063/7BwVpT5UyZM.jpg',
+                //img: require('@/assets/img/girls/nane.png'),
                 color: 'rgb(216,75,125)',
                 tags: ['певица', 'чтототам'],
-                code: 'nane123',
+                code: 'k1nd',
                 //video: 'https://storage.coverr.co/videos/Bridge%20In%20Place?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNTM2NDAyfQ.yEmgBkKAbJxZCz4aXhOzrUpmbgTHlPRetExZbmDVSf4'
-                video: require('@/assets/video/nane.webm')
+                video: require('@/assets/video/n.mp4')
             },
             {
                 id: 1,
@@ -21,8 +22,8 @@ export default {
                 img: require('@/assets/img/girls/mariam.png'),
                 color: 'rgb(30, 136, 229)',
                 tags: ['певица', 'чтототам'],
-                code: 'mar123',
-                video: 'https://storage.coverr.co/videos/coverr-road-through-lake-1576265328949?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNDkyODI3fQ.ijEwNg2Y2DZvrpPhqA6Ld-tuekpB2i2VNYat4s7ngMs'
+                code: 's3rene',
+                video: require('@/assets/video/3.mp4')
             },
             {
                 id: 2,
@@ -31,8 +32,8 @@ export default {
                 img: require('@/assets/img/girls/rita.png'),
                 color: '#ba68c8',
                 tags: ['певица', 'чтототам'],
-                code: 'rita123',
-                video: 'https://storage.coverr.co/videos/Blue%20Joy?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNTM5Mzc4fQ.nagKO_VJydjwHTSVFSS7xhcKZKvB7Q_iVqBvidchnHY'
+                code: '1pearl',
+                video: require('@/assets/video/4.mp4')
             },
             {
                 id: 3,
@@ -41,7 +42,7 @@ export default {
                 img: require('@/assets/img/girls/ani.png'),
                 color: '#ffd54f',
                 tags: ['певица', 'чтототам'],
-                code: 'ani123',
+                code: 'cap1tal',
                 video: require('@/assets/video/ani.mp4')
             },
             {
@@ -52,7 +53,7 @@ export default {
                 color: '#2196F3',
                 tags: ['певица', 'чтототам'],
                 code: 'nona123',
-                video: require('@/assets/video/ani.mp4')
+                video: require('@/assets/video/6.mp4')
             },
             {
                 id: 5,
@@ -61,8 +62,8 @@ export default {
                 img: require('@/assets/img/girls/rima.png'),
                 color: '#D81B60',
                 tags: ['певица', 'чтототам'],
-                code: 'rima123',
-                video: require('@/assets/video/ani.mp4')
+                code: 'r0man',
+                video: require('@/assets/video/1.mp4')
             },
             {
                 id: 6,
@@ -71,8 +72,8 @@ export default {
                 img: require('@/assets/img/girls/flora.png'),
                 color: '#FFEB3B',
                 tags: ['певица', 'чтототам'],
-                code: 'flora123',
-                video: require('@/assets/video/ani.mp4')
+                code: 'bl0oming',
+                video: require('@/assets/video/f.mp4')
             },
             {
                 id: 7,
@@ -81,18 +82,108 @@ export default {
                 img: require('@/assets/img/girls/lilia.png'),
                 color: '#FF5722',
                 tags: ['певица', 'чтототам'],
-                code: 'lilia123',
-                video: require('@/assets/video/ani.mp4')
+                code: 'l1lium',
+                video: require('@/assets/video/4.mp4')
             },
             {
                 id: 8,
-                name: 'Анна',
+                name: 'Анаит',
                 description: 'Несколько хороших и интересных качеств Анна. Lorem ipsum dolor sit amet, consectetur.',
                 img: require('@/assets/img/girls/anna.jpg'),
-                color: '#58ff76',
+                color: '#57ffa3',
                 tags: ['певица', 'чтототам'],
-                code: 'anna123',
-                video: require('@/assets/video/ani.mp4')
+                code: 'he@rt',
+                video: require('@/assets/video/2.mp4')
+            },
+            {
+                id: 9,
+                name: 'Лара',
+                description: 'Несколько хороших и интересных качеств Лара. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/lara.jpg'),
+                color: '#F50057',
+                tags: ['певица', 'чтототам'],
+                code: 'gu1l',
+                video: require('@/assets/video/5.mp4')
+            },
+            {
+                id: 10,
+                name: 'Нина',
+                description: 'Несколько хороших и интересных качеств Нина. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/nina.png'),
+                color: '#81D4FA',
+                tags: ['певица', 'чтототам'],
+                code: 'qu3en',
+                video: require('@/assets/video/3.mp4')
+            },
+            {
+                id: 11,
+                name: 'Лусине',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/lusy.jpg'),
+                color: '#7E57C2',
+                tags: ['певица', 'чтототам'],
+                code: 'b3aute0us',
+                video: require('@/assets/video/4.mp4')
+            },
+            {
+                id: 12,
+                name: 'Мане',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/mane.jpg'),
+                color: '#FF9800',
+                tags: ['певица', 'чтототам'],
+                code: 'armGodd3ss',
+                video: require('@/assets/video/6.mp4')
+            },
+            {
+                id: 13,
+                name: 'Эльмира',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/elmira.png'),
+                color: '#0091EA',
+                tags: ['певица', 'чтототам'],
+                code: 'pr1ncess',
+                video: require('@/assets/video/5.mp4')
+            },
+            {
+                id: 14,
+                name: 'Татев',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/tatev.png'),
+                color: '#ef7040',
+                tags: ['певица', 'чтототам'],
+                code: 'insp1res',
+                video: require('@/assets/video/1.mp4')
+            },
+            {
+                id: 15,
+                name: 'Маша',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/maria.png'),
+                color: '#2979FF',
+                tags: ['певица', 'чтототам'],
+                code: 'belov3d',
+                video: require('@/assets/video/3.mp4')
+            },
+            {
+                id: 16,
+                name: 'Инесса',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/inessa.png'),
+                color: '#FBC02D',
+                tags: ['певица', 'чтототам'],
+                code: 'imm2cu1ate',
+                video: require('@/assets/video/2.mp4')
+            },
+            {
+                id: 17,
+                name: 'Мага',
+                description: 'Несколько хороших и интересных качеств Лусине. Lorem ipsum dolor sit amet, consectetur.',
+                img: require('@/assets/img/girls/maga.png'),
+                color: '#ff5252',
+                tags: ['певица', 'чтототам'],
+                code: 'blackpear1',
+                video: require('@/assets/video/4.mp4')
             },
 
         ]

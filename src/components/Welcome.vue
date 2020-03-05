@@ -49,7 +49,7 @@ export default {
 
     setTimeout(() => {
       this.button_block = true;
-    }, 7000);
+    }, 8200);
   },
   data() {
     return {

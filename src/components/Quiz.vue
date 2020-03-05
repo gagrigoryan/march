@@ -3,26 +3,29 @@
     <div v-if="alert_text" class="alert_text">
       <h3>Можно потыкать</h3>
     </div>
-    <div v-if="holiday_text" class="holiday_text">
-      <h1>
-        <vue-typer text="Дорогая " :repeat="0"></vue-typer><br />
-        <vue-typer
-          class="name_typer"
-          :text="girl.name.toUpperCase() + '!'"
-          pre-type-delay="1000"
-          :repeat="0"
-        ></vue-typer>
-      </h1>
-      <p class="my-3">
-        <vue-typer
-          :text="main_text"
-          :repeat="0"
-          pre-type-delay="2200"
-        ></vue-typer
-        ><br />
-      </p>
-      <queue :id="this.id" />
+    <div class="container">
+      <div v-if="holiday_text" class="holiday_text px-5">
+        <h1>
+          <vue-typer text="Дорогая " :repeat="0"></vue-typer><br />
+          <vue-typer
+                  class="name_typer"
+                  :text="girl.name.toUpperCase() + '!'"
+                  pre-type-delay="1000"
+                  :repeat="0"
+          ></vue-typer>
+        </h1>
+        <p class="my-3">
+          <vue-typer
+                  :text="main_text"
+                  :repeat="0"
+                  pre-type-delay="2200"
+          ></vue-typer
+          ><br />
+        </p>
+        <queue style="opacity: 0; transition: all .3s ease;" :class="{'btn-show': btnShow}" :id="this.id" />
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -54,11 +57,16 @@ export default {
       this.alert_text = false;
       this.holiday_text = true;
     }, 8500);
+
+    setTimeout(() => {
+      this.btnShow = true;
+    }, 22000);
   },
   data() {
     return {
       alert_text: false,
       holiday_text: false,
+      btnShow: false,
       main_text:
         "Прими поздравления с 8 Марта! Пусть настроение цветет, как весенние цветы, жизнь будет яркой, работа в радость, а дом всегда полной чашей!"
     };
@@ -98,13 +106,18 @@ export default {
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    width: 80%
+    width: 100%
     margin-left: auto
     text-align: center
+    word-wrap: break-word
     p
         font-size: 1.4rem
     h1
         text-transform: uppercase
+
+.btn-show
+  opacity: 1 !important
+  transform: translateY(20px) !important
 
 @keyframes alert_text
     0%, 100%
@@ -125,4 +138,6 @@ export default {
   font-weight: 700;
   letter-spacing: 5px;
 }
+
+
 </style>
