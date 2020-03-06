@@ -271,9 +271,16 @@
                         `
                     },
 
-                ]).then((result) => {
+                ]).then(async (result) => {
                     this.answer.answ = queueResult;
-                    console.log(this.answer)
+                    let response = await fetch('http://dev.seo-rocket.ru/test-march', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(this.answer)
+                    });
+                    console.log(response)
                     if (!('dismiss' in result)) {
                         Swal.fire({
                             title: 'Все прошло успешно!',

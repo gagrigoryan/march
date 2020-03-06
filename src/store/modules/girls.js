@@ -6,11 +6,11 @@ export default {
             {
                 id: 0,
                 name: 'Нане',
-                description: 'Несколько хороших и интересных качеств Нане. Lorem ipsum dolor sit amet, consectetur.',
+                description: 'Наша красивая, бесподобная и превосходно поющая Нане. Будь всегда такой классной!',
                 img: 'https://sun9-53.userapi.com/c858216/v858216733/154063/7BwVpT5UyZM.jpg',
                 //img: require('@/assets/img/girls/nane.png'),
                 color: 'rgb(216,75,125)',
-                tags: ['певица', 'чтототам'],
+                tags: ['певица', 'едаВанЛав'],
                 code: 'k1nd',
                 //video: 'https://storage.coverr.co/videos/Bridge%20In%20Place?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTgyNTM2NDAyfQ.yEmgBkKAbJxZCz4aXhOzrUpmbgTHlPRetExZbmDVSf4'
                 video: require('@/assets/video/n.mp4')
@@ -28,50 +28,50 @@ export default {
             {
                 id: 2,
                 name: 'Рита',
-                description: 'Несколько хороших и интересных качеств Риты. Lorem ipsum dolor sit amet, consectetur.',
+                description: "Скромность - это фундамент мудрых. Наша скромная красавица! Желаем всего наилучшего!",
                 img: require('@/assets/img/girls/rita.png'),
                 color: '#ba68c8',
-                tags: ['певица', 'чтототам'],
+                tags: ['скромностьСпасетМир', 'слишкомМилая'],
                 code: '1pearl',
                 video: require('@/assets/video/4.mp4')
             },
             {
                 id: 3,
                 name: 'Ани',
-                description: 'Несколько хороших и интересных качеств Ани. Lorem ipsum dolor sit amet, consectetur.',
+                description: 'Как можно быть настолько красивой и талантливой сразу?! Будь всегда такой яркой!',
                 img: require('@/assets/img/girls/ani.png'),
                 color: '#ffd54f',
-                tags: ['певица', 'чтототам'],
+                tags: ['певица', 'талантивая'],
                 code: 'cap1tal',
                 video: require('@/assets/video/ani.mp4')
             },
             {
                 id: 4,
                 name: 'Нона',
-                description: 'Несколько хороших и интересных качеств Нона. Lorem ipsum dolor sit amet, consectetur.',
+                description: 'Наша красивая, добрая и отзывчивая Нона. Ты неотъемлемая часть ВЕМа. Будь всегда такой хорошей.',
                 img: require('@/assets/img/girls/nona.png'),
                 color: '#2196F3',
-                tags: ['певица', 'чтототам'],
+                tags: ['певица', 'доброта'],
                 code: 'nona123',
                 video: require('@/assets/video/6.mp4')
             },
             {
                 id: 5,
                 name: 'Рима',
-                description: 'Несколько хороших и интересных качеств Рима. Lorem ipsum dolor sit amet, consectetur.',
+                description: 'Наша воинственная и самая патриотичная девочка. Будь всегда такой "сильной"!',
                 img: require('@/assets/img/girls/rima.png'),
                 color: '#D81B60',
-                tags: ['певица', 'чтототам'],
+                tags: ['родинаМатьЗовет'],
                 code: 'r0man',
                 video: require('@/assets/video/1.mp4')
             },
             {
                 id: 6,
                 name: 'Флора',
-                description: 'Несколько хороших и интересных качеств Флора. Lorem ipsum dolor sit amet, consectetur.',
+                description: 'Наш эстет и фотограф. Мы уверены, что твои труды не пропадут даром. Будь всегда такой креативной!',
                 img: require('@/assets/img/girls/flora.png'),
                 color: '#FFEB3B',
-                tags: ['певица', 'чтототам'],
+                tags: ['фотограф', 'умеюВсе'],
                 code: 'bl0oming',
                 video: require('@/assets/video/f.mp4')
             },
